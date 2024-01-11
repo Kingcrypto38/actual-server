@@ -2,7 +2,7 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 8
+  version: 6
   cacheKey: 10c0
 
 "@actual-app/crdt@npm:2.1.0":
@@ -614,15 +614,6 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: 90cb5b70130f6e600750e6a9db5215806df7e5548698566cf00e882f5e4e5de212ae01ea510f2e1b972c016b53f2809656f82daa8cebe0acc63f06b94bc634b1
-  languageName: node
-  linkType: hard
-
-"@babel/runtime@npm:^7.21.0":
-  version: 7.22.10
-  resolution: "@babel/runtime@npm:7.22.10"
-  dependencies:
-    regenerator-runtime: "npm:^0.14.0"
-  checksum: d3a006fe2cbaf4048b935fb18f55d9ed52c26292182537b442cee57bf524dbb483367c57f464b1a5a96648d9d8d0fdcda848d58a8a09e18ed3f8971dcd684c6c
   languageName: node
   linkType: hard
 
@@ -1610,40 +1601,40 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "actual-sync@workspace:."
   dependencies:
-    "@actual-app/crdt": "npm:2.1.0"
-    "@actual-app/web": "npm:23.12.0"
-    "@babel/preset-typescript": "npm:^7.20.2"
-    "@types/bcrypt": "npm:^5.0.0"
-    "@types/better-sqlite3": "npm:^7.6.7"
-    "@types/cors": "npm:^2.8.13"
-    "@types/express": "npm:^4.17.17"
-    "@types/express-actuator": "npm:^1.8.0"
-    "@types/jest": "npm:^29.2.3"
-    "@types/node": "npm:^17.0.45"
-    "@types/supertest": "npm:^2.0.12"
-    "@types/uuid": "npm:^9.0.0"
-    "@typescript-eslint/eslint-plugin": "npm:^5.51.0"
-    "@typescript-eslint/parser": "npm:^5.51.0"
-    bcrypt: "npm:^5.1.0"
-    better-sqlite3: "npm:^9.1.1"
-    body-parser: "npm:^1.20.1"
-    cors: "npm:^2.8.5"
-    date-fns: "npm:^2.30.0"
-    debug: "npm:^4.3.4"
-    eslint: "npm:^8.33.0"
-    eslint-plugin-prettier: "npm:^4.2.1"
-    express: "npm:4.18.2"
-    express-actuator: "npm:1.8.4"
-    express-rate-limit: "npm:^6.7.0"
-    express-response-size: "npm:^0.0.3"
-    jest: "npm:^29.3.1"
-    jws: "npm:^4.0.0"
-    migrate: "npm:^2.0.1"
-    nordigen-node: "npm:^1.2.6"
-    prettier: "npm:^2.8.3"
-    supertest: "npm:^6.3.1"
-    typescript: "npm:^4.9.5"
-    uuid: "npm:^9.0.0"
+    "@actual-app/crdt": 2.1.0
+    "@actual-app/web": 23.12.0
+    "@babel/preset-typescript": ^7.20.2
+    "@types/bcrypt": ^5.0.0
+    "@types/better-sqlite3": ^7.6.7
+    "@types/cors": ^2.8.13
+    "@types/express": ^4.17.17
+    "@types/express-actuator": ^1.8.0
+    "@types/jest": ^29.2.3
+    "@types/node": ^17.0.45
+    "@types/supertest": ^2.0.12
+    "@types/uuid": ^9.0.0
+    "@typescript-eslint/eslint-plugin": ^5.51.0
+    "@typescript-eslint/parser": ^5.51.0
+    bcrypt: ^5.1.0
+    better-sqlite3: ^9.1.1
+    body-parser: ^1.20.1
+    cors: ^2.8.5
+    date-fns: ^3.0.4
+    debug: ^4.3.4
+    eslint: ^8.33.0
+    eslint-plugin-prettier: ^4.2.1
+    express: 4.18.2
+    express-actuator: 1.8.4
+    express-rate-limit: ^6.7.0
+    express-response-size: ^0.0.3
+    jest: ^29.3.1
+    jws: ^4.0.0
+    migrate: ^2.0.1
+    nordigen-node: ^1.2.6
+    prettier: ^2.8.3
+    supertest: ^6.3.1
+    typescript: ^4.9.5
+    uuid: ^9.0.0
   languageName: unknown
   linkType: soft
 
@@ -2357,12 +2348,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"date-fns@npm:^2.30.0":
-  version: 2.30.0
-  resolution: "date-fns@npm:2.30.0"
-  dependencies:
-    "@babel/runtime": "npm:^7.21.0"
-  checksum: e4b521fbf22bc8c3db332bbfb7b094fd3e7627de0259a9d17c7551e2d2702608a7307a449206065916538e384f37b181565447ce2637ae09828427aed9cb5581
+"date-fns@npm:^3.0.4":
+  version: 3.2.0
+  resolution: "date-fns@npm:3.2.0"
+  checksum: 8/ff5dab139f40170c4ba5472bab9bc887dd3940f7661bd8322f074faadbd422513c7195296541b5237fc450a0333a4b1c5659f887c7c14b1bfa2902998ac7582e
   languageName: node
   linkType: hard
 
@@ -3185,9 +3174,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@patch:fsevents@npm%3A^2.3.2#optional!builtin<compat/fsevents>":
+"fsevents@patch:fsevents@npm%3A^2.3.2#~builtin<compat/fsevents>":
   version: 2.3.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#optional!builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
   dependencies:
     node-gyp: "npm:latest"
   conditions: os=darwin
@@ -5290,13 +5279,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"regenerator-runtime@npm:^0.14.0":
-  version: 0.14.0
-  resolution: "regenerator-runtime@npm:0.14.0"
-  checksum: e25f062c1a183f81c99681691a342760e65c55e8d3a4d4fe347ebe72433b123754b942b70b622959894e11f8a9131dc549bd3c9a5234677db06a4af42add8d12
-  languageName: node
-  linkType: hard
-
 "regexpp@npm:^3.2.0":
   version: 3.2.0
   resolution: "regexpp@npm:3.2.0"
@@ -5354,16 +5336,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@npm%3A^1.20.0#optional!builtin<compat/resolve>":
+"resolve@patch:resolve@npm%3A^1.20.0#~builtin<compat/resolve>":
   version: 1.22.1
-  resolution: "resolve@patch:resolve@npm%3A1.22.1#optional!builtin<compat/resolve>::version=1.22.1&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=c3c19d"
   dependencies:
     is-core-module: "npm:^2.9.0"
     path-parse: "npm:^1.0.7"
     supports-preserve-symlinks-flag: "npm:^1.0.0"
   bin:
     resolve: bin/resolve
-  checksum: 0d8ccceba5537769c42aa75e4aa75ae854aac866a11d7e9ffdb1663f0158ee646a0d48fc2818ed5e7fb364d64220a1fb9092a160e11e00cbdd5fbab39a13092c
+  checksum: 8/5656f4d0bedcf8eb52685c1abdf8fbe73a1603bb1160a24d716e27a57f6cecbe2432ff9c89c2bd57542c3a7b9d14b1882b73bfe2e9d7849c9a4c0b8b39f02b8b
   languageName: node
   linkType: hard
 
@@ -5966,13 +5948,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^4.9.5#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@^4.9.5#~builtin<compat/typescript>":
   version: 4.9.5
-  resolution: "typescript@patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"
+  resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=d73830"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: e3333f887c6829dfe0ab6c1dbe0dd1e3e2aeb56c66460cb85c5440c566f900c833d370ca34eb47558c0c69e78ced4bfe09b8f4f98b6de7afed9b84b8d1dd06a1
+  checksum: 8/2eee5c37cad4390385db5db5a8e81470e42e8f1401b0358d7390095d6f681b410f2c4a0c496c6ff9ebd775423c7785cdace7bcdad76c7bee283df3d9718c0f20
   languageName: node
   linkType: hard
 
