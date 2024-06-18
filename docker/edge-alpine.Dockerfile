@@ -1,4 +1,4 @@
-FROM alpine:3.17 as base
+FROM alpine:3 as base
 RUN apk add --no-cache nodejs yarn npm python3 openssl build-base jq curl
 WORKDIR /app
 ADD .yarn ./.yarn
@@ -14,7 +14,7 @@ ARG GITHUB_TOKEN
 RUN curl -L -o /tmp/desktop-client.zip --header "Authorization: Bearer ${GITHUB_TOKEN}" $(jq -r '.archive_download_url' /tmp/latest-build.json)
 RUN unzip /tmp/desktop-client.zip -d /public
 
-FROM alpine:3.17 as prod
+FROM alpine:3 as prod
 RUN apk add --no-cache nodejs tini
 WORKDIR /app
 COPY --from=base /app/node_modules /app/node_modules
