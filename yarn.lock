@@ -2,7 +2,7 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 8
+  version: 6
   cacheKey: 10c0
 
 "@actual-app/crdt@npm:2.1.0":
@@ -1610,40 +1610,40 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "actual-sync@workspace:."
   dependencies:
-    "@actual-app/crdt": "npm:2.1.0"
-    "@actual-app/web": "npm:23.12.0"
-    "@babel/preset-typescript": "npm:^7.20.2"
-    "@types/bcrypt": "npm:^5.0.0"
-    "@types/better-sqlite3": "npm:^7.6.7"
-    "@types/cors": "npm:^2.8.13"
-    "@types/express": "npm:^4.17.17"
-    "@types/express-actuator": "npm:^1.8.0"
-    "@types/jest": "npm:^29.2.3"
-    "@types/node": "npm:^17.0.45"
-    "@types/supertest": "npm:^2.0.12"
-    "@types/uuid": "npm:^9.0.0"
-    "@typescript-eslint/eslint-plugin": "npm:^5.51.0"
-    "@typescript-eslint/parser": "npm:^5.51.0"
-    bcrypt: "npm:^5.1.0"
-    better-sqlite3: "npm:^9.1.1"
-    body-parser: "npm:^1.20.1"
-    cors: "npm:^2.8.5"
-    date-fns: "npm:^2.30.0"
-    debug: "npm:^4.3.4"
-    eslint: "npm:^8.33.0"
-    eslint-plugin-prettier: "npm:^4.2.1"
-    express: "npm:4.18.2"
-    express-actuator: "npm:1.8.4"
-    express-rate-limit: "npm:^6.7.0"
-    express-response-size: "npm:^0.0.3"
-    jest: "npm:^29.3.1"
-    jws: "npm:^4.0.0"
-    migrate: "npm:^2.0.1"
-    nordigen-node: "npm:^1.2.6"
-    prettier: "npm:^2.8.3"
-    supertest: "npm:^6.3.1"
-    typescript: "npm:^4.9.5"
-    uuid: "npm:^9.0.0"
+    "@actual-app/crdt": 2.1.0
+    "@actual-app/web": 23.12.0
+    "@babel/preset-typescript": ^7.20.2
+    "@types/bcrypt": ^5.0.0
+    "@types/better-sqlite3": ^7.6.7
+    "@types/cors": ^2.8.13
+    "@types/express": ^4.17.17
+    "@types/express-actuator": ^1.8.0
+    "@types/jest": ^29.2.3
+    "@types/node": ^17.0.45
+    "@types/supertest": ^2.0.12
+    "@types/uuid": ^9.0.0
+    "@typescript-eslint/eslint-plugin": ^5.51.0
+    "@typescript-eslint/parser": ^5.51.0
+    bcrypt: ^5.1.0
+    better-sqlite3: ^9.1.1
+    body-parser: ^1.20.1
+    cors: ^2.8.5
+    date-fns: ^2.30.0
+    debug: ^4.3.4
+    eslint: ^8.33.0
+    eslint-plugin-prettier: ^4.2.1
+    express: 4.18.2
+    express-actuator: 1.8.4
+    express-rate-limit: ^6.7.0
+    express-response-size: ^0.0.3
+    jest: ^29.3.1
+    jws: ^4.0.1
+    migrate: ^2.0.1
+    nordigen-node: ^1.2.6
+    prettier: ^2.8.3
+    supertest: ^6.3.1
+    typescript: ^4.9.5
+    uuid: ^9.0.0
   languageName: unknown
   linkType: soft
 
@@ -2024,7 +2024,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"buffer-equal-constant-time@npm:1.0.1":
+"buffer-equal-constant-time@npm:^1.0.1":
   version: 1.0.1
   resolution: "buffer-equal-constant-time@npm:1.0.1"
   checksum: fb2294e64d23c573d0dd1f1e7a466c3e978fe94a4e0f8183937912ca374619773bef8e2aceb854129d2efecbbc515bbd0cc78d2734a3e3031edb0888531bbc8e
@@ -3185,9 +3185,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@patch:fsevents@npm%3A^2.3.2#optional!builtin<compat/fsevents>":
+"fsevents@patch:fsevents@npm%3A^2.3.2#~builtin<compat/fsevents>":
   version: 2.3.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#optional!builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
   dependencies:
     node-gyp: "npm:latest"
   conditions: os=darwin
@@ -4280,24 +4280,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jwa@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "jwa@npm:2.0.0"
+"jwa@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "jwa@npm:2.0.1"
   dependencies:
-    buffer-equal-constant-time: "npm:1.0.1"
-    ecdsa-sig-formatter: "npm:1.0.11"
-    safe-buffer: "npm:^5.0.1"
-  checksum: 6baab823b93c038ba1d2a9e531984dcadbc04e9eb98d171f4901b7a40d2be15961a359335de1671d78cb6d987f07cbe5d350d8143255977a889160c4d90fcc3c
+    buffer-equal-constant-time: ^1.0.1
+    ecdsa-sig-formatter: 1.0.11
+    safe-buffer: ^5.0.1
+  checksum: 8/6a9828c054c407f6718057089bd3d46dfcb1394e1553e3867abd4579dbec7728b4b0759e7253422ab7d824d95615a86427b35c43f94b83fc3a76470ca4bd2037
   languageName: node
   linkType: hard
 
-"jws@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "jws@npm:4.0.0"
+"jws@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "jws@npm:4.0.1"
   dependencies:
-    jwa: "npm:^2.0.0"
-    safe-buffer: "npm:^5.0.1"
-  checksum: f1ca77ea5451e8dc5ee219cb7053b8a4f1254a79cb22417a2e1043c1eb8a569ae118c68f24d72a589e8a3dd1824697f47d6bd4fb4bebb93a3bdf53545e721661
+    jwa: ^2.0.1
+    safe-buffer: ^5.0.1
+  checksum: 8/c33a060b2cce1e0e49f85054a49a951f9d52a9e2ae732d720f0fc51843c9ac07a68aacd8e9d086ef4c7c4437d42978b698b57a3e7c9bc4a91c0b74276ea85a9a
   languageName: node
   linkType: hard
 
@@ -5354,16 +5354,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@npm%3A^1.20.0#optional!builtin<compat/resolve>":
+"resolve@patch:resolve@npm%3A^1.20.0#~builtin<compat/resolve>":
   version: 1.22.1
-  resolution: "resolve@patch:resolve@npm%3A1.22.1#optional!builtin<compat/resolve>::version=1.22.1&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=c3c19d"
   dependencies:
     is-core-module: "npm:^2.9.0"
     path-parse: "npm:^1.0.7"
     supports-preserve-symlinks-flag: "npm:^1.0.0"
   bin:
     resolve: bin/resolve
-  checksum: 0d8ccceba5537769c42aa75e4aa75ae854aac866a11d7e9ffdb1663f0158ee646a0d48fc2818ed5e7fb364d64220a1fb9092a160e11e00cbdd5fbab39a13092c
+  checksum: 8/5656f4d0bedcf8eb52685c1abdf8fbe73a1603bb1160a24d716e27a57f6cecbe2432ff9c89c2bd57542c3a7b9d14b1882b73bfe2e9d7849c9a4c0b8b39f02b8b
   languageName: node
   linkType: hard
 
@@ -5966,13 +5966,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^4.9.5#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@^4.9.5#~builtin<compat/typescript>":
   version: 4.9.5
-  resolution: "typescript@patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"
+  resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=d73830"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: e3333f887c6829dfe0ab6c1dbe0dd1e3e2aeb56c66460cb85c5440c566f900c833d370ca34eb47558c0c69e78ced4bfe09b8f4f98b6de7afed9b84b8d1dd06a1
+  checksum: 8/2eee5c37cad4390385db5db5a8e81470e42e8f1401b0358d7390095d6f681b410f2c4a0c496c6ff9ebd775423c7785cdace7bcdad76c7bee283df3d9718c0f20
   languageName: node
   linkType: hard
 
